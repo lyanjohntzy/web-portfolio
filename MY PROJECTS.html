@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - LyanTzy</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="HOME.html">
+    <h2 class="logo">Lyan<span>Tzy</span></h2>
+  </a>
+  <ul class="nav-links">
+    <li><a href="HOME.html">HOME</a></li>
+    <li><a href="MY PROJECTS.html" class="active">MY PROJECTS</a></li>
+    <li><a href="ABOUT ME.html">ABOUT ME</a></li>
+    <li><a href="CONTACTS.html">CONTACT</a></li>
+  </ul>
+</nav>
+
+<section class="projects">
+
+  <div class="projectbtn">
+    <div class="top-buttons">
+      <a href="#" class="probtn" onclick="changeProject(this, 'RESEARCH.pdf', 'research')">RESEARCH</a>
+      <a href="#" class="probtn" onclick="changeProject(this, 'CATALOG.pdf', 'catalog')">CATALOG</a>
+      <a href="#" class="probtn" onclick="changeProject(this, 'SCRAPBOOK.pdf', 'scrapbook')">SCRAPBOOK</a>
+      <a href="#" class="probtn" onclick="changeProject(this, 'MediPal.pdf', 'medipal')">MEDIPAL</a>
+      <a href="#" class="probtn" onclick="changeProject(this, 'GuroGo.pdf', 'gurogo')">GUROGO</a>
+    </div>
+  </div>
+
+  <div class="content-project">
+
+    <div class="leftbox">
+      <div class="project-box">
+        <h2>PROJECT</h2>
+        <iframe
+          name="content"
+          src="RESEARCH.pdf"
+          class="myframe">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="rightbox">
+      <div class="discription">
+        <h2>DESCRIPTION</h2>
+
+        <div class="description-inner-box">
+          <div id="project-details">
+            <span class="desc-label">Title:</span>
+            <p id="desc-title">Select a project to see details</p>
+
+            <span class="desc-label">Date:</span>
+            <p id="desc-date">-</p>
+
+            <span class="desc-label">Subject:</span>
+            <p id="desc-subject">-</p>
+
+            <span class="desc-label">Description:</span>
+            <p id="desc-text">-</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
